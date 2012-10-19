@@ -1,0 +1,30 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.login{
+	text-align: center;
+}
+.home .node-block{
+	border: 1px solid #666;
+	height: 60px;
+}
+.home .node-block .title{
+	width: 140px;
+	background: #333;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+}
+.home .node-block .brief{
+	width: 320px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.home .node-block-next{
+	border: 1px dashed #666;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
