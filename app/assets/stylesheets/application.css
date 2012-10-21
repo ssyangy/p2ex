@@ -11,6 +11,21 @@
  *= require_self
  *= require_tree .
  */
+.mt2{
+	margin-top: 2px;
+}
+.mt5{
+	margin-top: 5px;
+}
+.mb2{
+	margin-bottom: 2px;
+}
+.mb5{
+	margin-bottom: 5px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
 .mb20{
 	margin-bottom: 20px;
 }
@@ -20,10 +35,26 @@
 .mr10{
 	margin-right: 10px;
 }
-
+.lighter{
+	color: #999;
+}
+hr{
+	margin: 15px 0!important;
+}
+h2{
+	font-size: 20px!important;
+	margin: 0px!important;
+	line-height: 25px!important;
+}
+.container{
+	padding-top: 20px;
+}
 .footer{
 	margin-top: 100px;
 	margin-bottom: 20px;
 	text-align: center;
 	color: #cdcdcd;
+}
+.input-fullsize{
+	width: 96%;
 }

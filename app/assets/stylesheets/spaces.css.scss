@@ -1,0 +1,21 @@
+// Place all the styles related to the Spaces controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.space_info_header, .space_sidebar{
+	background-color: #efefef;
+}
+.space_info_inner{
+	padding: 20px 20px;
+}
+
+.space_content .topic{
+	background-color: #efefef;
+	padding: 8px 10px;
+}
+.space_content .topic .involver{
+	color: #999;
+}
+.space_sidebar_inner{
+	min-height: 100px;
+	padding: 10px 20px;
+}

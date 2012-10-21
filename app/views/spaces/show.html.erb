@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="span8 space_content">
+		
+		<div class="space_info_header mb10">
+			<div class="space_info_inner">
+				<h2>羽毛球</h2>
+			</div>
+		</div>
+		
+		<p id="notice"><%= notice %></p>
+		
+		<div class="topics">
+			<% @topics = @space.topics %>
+			<% @topics.each do |t| %>
+				<div class="topic mb2">
+					<div class="title">
+						<%= link_to t.title, t %>
+					</div>
+					<div class="lighter"><small>茉莉 / Fistan</small></div>
+				</div>
+			<% end -%>
+		</div>
+
+	</div>
+	<div class="span4 space_sidebar">
+		<div class="space_sidebar_inner">
+			<%= link_to '+ Topic', new_topic_path(:space_id => @space.id) %>
+		</div>
+	</div>
+</div>

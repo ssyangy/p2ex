@@ -1,0 +1,13 @@
+// Place all the styles related to the Topics controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.topic_content, .topic_replies_form{
+	background-color: #efefef;
+	min-height: 50px;
+}
+.topic_content_inner{
+	padding: 15px 20px 20px 20px;
+}
+.topic_replies_form{
+	padding: 10px;
+}
