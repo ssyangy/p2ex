@@ -2,8 +2,8 @@
 	<div class="span8 space_content">
 		
 		<div class="space_info_header mb10">
-			<div class="space_info_inner">
-				<h2>羽毛球</h2>
+			<div class="inner">
+				<h2><%= @space.display_name %></h2>
 			</div>
 		</div>
 		
@@ -23,7 +23,7 @@
 
 	</div>
 	<div class="span4 space_sidebar">
-		<div class="space_sidebar_inner">
+		<div class="inner">
 			<%= link_to '+ Topic', new_topic_path(:space_id => @space.id) %>
 		</div>
 	</div>

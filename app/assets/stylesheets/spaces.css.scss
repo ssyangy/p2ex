@@ -4,7 +4,7 @@
 .space_info_header, .space_sidebar{
 	background-color: #efefef;
 }
-.space_info_inner{
+.space_info_header .inner{
 	padding: 20px 20px;
 }
 
@@ -15,7 +15,7 @@
 .space_content .topic .involver{
 	color: #999;
 }
-.space_sidebar_inner{
+.space_sidebar .inner{
 	min-height: 100px;
 	padding: 10px 20px;
 }
