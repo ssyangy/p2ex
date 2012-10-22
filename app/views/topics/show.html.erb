@@ -11,12 +11,15 @@
 			<div><%= @topic.content %></div>
 		</div>
 	</div>
+
 	<div class="topic_replies span5">
 		
 		<div class="topic_replies_form clearfix">
 			<%= text_area_tag :reply, nil, :rows => 3, :class => 'input-fullsize' %>
 			<%= link_to "回复", nil, :class => 'pull-right btn btn-mini' %>
 		</div>
+
+		<div class="list"></div>
 
 	</div>
 </div>
