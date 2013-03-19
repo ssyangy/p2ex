@@ -1,11 +1,14 @@
+
+<% @spaces.each do |space| %>
 <div class="row home mb20">
 	<div class="span3"></div>
 	<div class="span6 node-block">
-		<div class="title pull-left">羽毛球</div>
+		<div class="title pull-left"><%= link_to space.name, space %></div>
 		<div class="brief pull-left">工头：<%=link_to 'Fistan', nil, :class => "mr10" %>创建于：2012/10/03</div>
 	</div>
 	<div class="span3"></div>
 </div>
+<% end %>
 
 <div class="row home">
 	<div class="span3"></div>

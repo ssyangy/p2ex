@@ -4,11 +4,11 @@
 <div class="row">
 	<div class="topic_content span7">
 		<div class="inner">
-			<p><%= link_to "← #{@topic.space.display_name}", @topic.space %></p>
+			<p><%= link_to "← #{@topic.space.display_name}, 返回列表", @topic.space %></p>
 			<h2><%= @topic.title %></h2>
-			<p class="mt5 lighter"><small>更新 (12)：<%= @topic.updated_at.strftime("%Y-%m-%d %H:%M:%S") %> / 发表：<%= @topic.created_at.strftime("%Y-%m-%d %H:%M:%S") %></small></p>
+			<p class="mt5 lighter"><small>更新 (12)：<%= @topic.updated_at.strftime("%Y-%m-%d %H:%M:%S") %> / 发表：<%= @topic.created_at.strftime("%Y-%m-%d %H:%M:%S") %> <%= link_to 'Edit', edit_topic_path(@topic, :space_id => @topic.space.id) %></small></p>
 			<hr />
-			<div><%= @topic.content %></div>
+			<div><%= simple_format(@topic.content) %></div>
 		</div>
 	</div>
 
@@ -23,5 +23,3 @@
 
 	</div>
 </div>
-
-<%= link_to 'Edit', edit_topic_path(@topic, :space_id => @topic.space.id) %>

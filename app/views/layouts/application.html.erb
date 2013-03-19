@@ -9,9 +9,15 @@
 <body>
 
 <div class="container">
-	<h1 style="text-align:center;">- P2EX -</h1>
-	<p class="login mb20"><%=link_to 'Sign in'%> / <%=link_to 'Sign up'%></p>
-
+	<h1 style="text-align:center;">- <%= link_to 'P2EX', root_path %> -</h1>
+	<p class="login mb20">
+		<% if signed_in? %>
+		<%= current_user.email %>, <%= link_to "退出", destroy_user_session_path, :method => :delete %>
+	  <% else %>
+		<%= link_to '登录', new_user_session_path %> / <%= link_to '注册', new_user_registration_path %>
+		<% end %>
+	</p>
+	
 	<%= yield %>
 
 	<div class="footer">Yan's - 2012/10/19</div>
